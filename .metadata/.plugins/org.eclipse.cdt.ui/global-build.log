@@ -1,0 +1,451 @@
+18:51:13 **** Build of configuration Debug for project Network Card ****
+make -j4 all 
+Building file: ../startup/sysmem (2017_09_04 21_04_14 UTC).c
+Building file: ../startup/startup_stm32 (2017_09_04 21_04_14 UTC).s
+Building file: ../src/ADC (2017_09_04 21_04_14 UTC).c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Assembler
+Invoking: MCU GCC Compiler
+C:\Users\larsonma\Documents\CE 4951\Project\Network Card\Debug
+C:\Users\larsonma\Documents\CE 4951\Project\Network Card\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"startup/sysmem (2017_09_04 21_04_14 UTC).d" -MT"startup/sysmem (2017_09_04 21_04_14 UTC).o" -o "startup/sysmem (2017_09_04 21_04_14 UTC).o" "../startup/sysmem (2017_09_04 21_04_14 UTC).c"
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "startup/startup_stm32 (2017_09_04 21_04_14 UTC).o" "../startup/startup_stm32 (2017_09_04 21_04_14 UTC).s"
+C:\Users\larsonma\Documents\CE 4951\Project\Network Card\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/ADC (2017_09_04 21_04_14 UTC).d" -MT"src/ADC (2017_09_04 21_04_14 UTC).o" -o "src/ADC (2017_09_04 21_04_14 UTC).o" "../src/ADC (2017_09_04 21_04_14 UTC).c"
+Building file: ../src/RTC (2017_09_04 21_04_14 UTC).c
+Invoking: MCU GCC Compiler
+C:\Users\larsonma\Documents\CE 4951\Project\Network Card\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/RTC (2017_09_04 21_04_14 UTC).d" -MT"src/RTC (2017_09_04 21_04_14 UTC).o" -o "src/RTC (2017_09_04 21_04_14 UTC).o" "../src/RTC (2017_09_04 21_04_14 UTC).c"
+../src/ADC (2017_09_04 21_04_14 UTC).c:8:17: fatal error: ADC.h: No such file or directory
+ #include "ADC.h"
+                 ^
+compilation terminated.
+Finished building: ../startup/startup_stm32 (2017_09_04 21_04_14 UTC).s
+src/subdir.mk:48: recipe for target 'src/ADC (2017_09_04 21_04_14 UTC).o' failed
+make: *** [src/ADC (2017_09_04 21_04_14 UTC).o] Error 1
+make: *** Waiting for unfinished jobs....
+ 
+../src/RTC (2017_09_04 21_04_14 UTC).c:1:17: fatal error: RTC.h: No such file or directory
+ #include "RTC.h"
+                 ^
+compilation terminated.
+Finished building: ../startup/sysmem (2017_09_04 21_04_14 UTC).c
+src/subdir.mk:56: recipe for target 'src/RTC (2017_09_04 21_04_14 UTC).o' failed
+make: *** [src/RTC (2017_09_04 21_04_14 UTC).o] Error 1
+ 
+18:51:32 **** Incremental Build of configuration Debug for project Network Card ****
+make -j4 all 
+Building file: ../src/ADC (2017_09_04 21_04_14 UTC).c
+Building file: ../src/RTC (2017_09_04 21_04_14 UTC).c
+Building file: ../src/gpio (2017_09_04 21_04_14 UTC).c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+C:\Users\larsonma\Documents\CE 4951\Project\Network Card\Debug
+C:\Users\larsonma\Documents\CE 4951\Project\Network Card\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/ADC (2017_09_04 21_04_14 UTC).d" -MT"src/ADC (2017_09_04 21_04_14 UTC).o" -o "src/ADC (2017_09_04 21_04_14 UTC).o" "../src/ADC (2017_09_04 21_04_14 UTC).c"
+C:\Users\larsonma\Documents\CE 4951\Project\Network Card\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/RTC (2017_09_04 21_04_14 UTC).d" -MT"src/RTC (2017_09_04 21_04_14 UTC).o" -o "src/RTC (2017_09_04 21_04_14 UTC).o" "../src/RTC (2017_09_04 21_04_14 UTC).c"
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/gpio (2017_09_04 21_04_14 UTC).d" -MT"src/gpio (2017_09_04 21_04_14 UTC).o" -o "src/gpio (2017_09_04 21_04_14 UTC).o" "../src/gpio (2017_09_04 21_04_14 UTC).c"
+Building file: ../src/keypad (2017_09_04 21_04_14 UTC).c
+Invoking: MCU GCC Compiler
+../src/RTC (2017_09_04 21_04_14 UTC).c:1:17: fatal error: RTC.h: No such file or directory
+ #include "RTC.h"
+                 ^
+compilation terminated.
+../src/ADC (2017_09_04 21_04_14 UTC).c:8:17: fatal error: ADC.h: No such file or directory
+ #include "ADC.h"
+                 ^
+compilation terminated.
+C:\Users\larsonma\Documents\CE 4951\Project\Network Card\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/keypad (2017_09_04 21_04_14 UTC).d" -MT"src/keypad (2017_09_04 21_04_14 UTC).o" -o "src/keypad (2017_09_04 21_04_14 UTC).o" "../src/keypad (2017_09_04 21_04_14 UTC).c"
+../src/gpio (2017_09_04 21_04_14 UTC).c:10:18: fatal error: gpio.h: No such file or directory
+ #include "gpio.h"
+                  ^
+compilation terminated.
+src/subdir.mk:56: recipe for target 'src/RTC (2017_09_04 21_04_14 UTC).o' failed
+make: *** [src/RTC (2017_09_04 21_04_14 UTC).o] Error 1
+src/subdir.mk:48: recipe for target 'src/ADC (2017_09_04 21_04_14 UTC).o' failed
+make: *** Waiting for unfinished jobs....
+make: *** [src/ADC (2017_09_04 21_04_14 UTC).o] Error 1
+src/subdir.mk:64: recipe for target 'src/gpio (2017_09_04 21_04_14 UTC).o' failed
+make: *** [src/gpio (2017_09_04 21_04_14 UTC).o] Error 1
+../src/keypad (2017_09_04 21_04_14 UTC).c:11:20: fatal error: keypad.h: No such file or directory
+ #include "keypad.h"
+                    ^
+compilation terminated.
+make: *** [src/keypad (2017_09_04 21_04_14 UTC).o] Error 1
+src/subdir.mk:72: recipe for target 'src/keypad (2017_09_04 21_04_14 UTC).o' failed
+18:52:38 **** Incremental Build of configuration Debug for project Network Card ****
+make -j4 all 
+Building file: ../startup/sysmem (2017_09_04 21_04_14 UTC).c
+Building file: ../src/ADC (2017_09_04 21_04_14 UTC).c
+Building file: ../src/RTC (2017_09_04 21_04_14 UTC).c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+C:\Users\larsonma\Documents\CE 4951\Project\Network Card\Debug
+C:\Users\larsonma\Documents\CE 4951\Project\Network Card\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"C:/Users/larsonma/Documents/CE 4951/Project/Network Card/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"startup/sysmem (2017_09_04 21_04_14 UTC).d" -MT"startup/sysmem (2017_09_04 21_04_14 UTC).o" -o "startup/sysmem (2017_09_04 21_04_14 UTC).o" "../startup/sysmem (2017_09_04 21_04_14 UTC).c"
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"C:/Users/larsonma/Documents/CE 4951/Project/Network Card/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/ADC (2017_09_04 21_04_14 UTC).d" -MT"src/ADC (2017_09_04 21_04_14 UTC).o" -o "src/ADC (2017_09_04 21_04_14 UTC).o" "../src/ADC (2017_09_04 21_04_14 UTC).c"
+C:\Users\larsonma\Documents\CE 4951\Project\Network Card\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"C:/Users/larsonma/Documents/CE 4951/Project/Network Card/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/RTC (2017_09_04 21_04_14 UTC).d" -MT"src/RTC (2017_09_04 21_04_14 UTC).o" -o "src/RTC (2017_09_04 21_04_14 UTC).o" "../src/RTC (2017_09_04 21_04_14 UTC).c"
+Building file: ../src/gpio (2017_09_04 21_04_14 UTC).c
+Invoking: MCU GCC Compiler
+../src/ADC (2017_09_04 21_04_14 UTC).c:8:17: fatal error: ADC.h: No such file or directory
+ #include "ADC.h"
+                 ^
+compilation terminated.
+C:\Users\larsonma\Documents\CE 4951\Project\Network Card\Debug
+src/subdir.mk:48: recipe for target 'src/ADC (2017_09_04 21_04_14 UTC).o' failed
+make: *** [src/ADC (2017_09_04 21_04_14 UTC).o] Error 1
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"C:/Users/larsonma/Documents/CE 4951/Project/Network Card/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/gpio (2017_09_04 21_04_14 UTC).d" -MT"src/gpio (2017_09_04 21_04_14 UTC).o" -o "src/gpio (2017_09_04 21_04_14 UTC).o" "../src/gpio (2017_09_04 21_04_14 UTC).c"
+make: *** Waiting for unfinished jobs....
+../src/RTC (2017_09_04 21_04_14 UTC).c:1:17: fatal error: RTC.h: No such file or directory
+ #include "RTC.h"
+                 ^
+compilation terminated.
+make: *** [src/RTC (2017_09_04 21_04_14 UTC).o] Error 1
+src/subdir.mk:56: recipe for target 'src/RTC (2017_09_04 21_04_14 UTC).o' failed
+Finished building: ../startup/sysmem (2017_09_04 21_04_14 UTC).c
+../src/gpio (2017_09_04 21_04_14 UTC).c:10:18: fatal error: gpio.h: No such file or directory
+ #include "gpio.h"
+                  ^
+compilation terminated.
+ 
+src/subdir.mk:64: recipe for target 'src/gpio (2017_09_04 21_04_14 UTC).o' failed
+make: *** [src/gpio (2017_09_04 21_04_14 UTC).o] Error 1
+18:57:03 **** Incremental Build of configuration Debug for project Network Card ****
+make -j4 all 
+Building file: ../startup/startup_stm32.s
+Building file: ../startup/sysmem.c
+Building file: ../src/ADC.c
+Invoking: MCU GCC Assembler
+Invoking: MCU GCC Compiler
+Building file: ../src/RTC.c
+Invoking: MCU GCC Compiler
+C:\Users\larsonma\Documents\CE 4951\Project\Network Card\Debug
+C:\Users\larsonma\Documents\CE 4951\Project\Network Card\Debug
+Invoking: MCU GCC Compiler
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "startup/startup_stm32.o" "../startup/startup_stm32.s"
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"C:/Users/larsonma/Documents/CE 4951/Project/Network Card/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"startup/sysmem.d" -MT"startup/sysmem.o" -o "startup/sysmem.o" "../startup/sysmem.c"
+C:\Users\larsonma\Documents\CE 4951\Project\Network Card\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"C:/Users/larsonma/Documents/CE 4951/Project/Network Card/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/ADC.d" -MT"src/ADC.o" -o "src/ADC.o" "../src/ADC.c"
+C:\Users\larsonma\Documents\CE 4951\Project\Network Card\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"C:/Users/larsonma/Documents/CE 4951/Project/Network Card/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/RTC.d" -MT"src/RTC.o" -o "src/RTC.o" "../src/RTC.c"
+Finished building: ../startup/startup_stm32.s
+ 
+Building file: ../src/gpio.c
+../src/RTC.c: In function 'time_to_string':
+../src/RTC.c:128:12: warning: unused variable 'ignore' [-Wunused-variable]
+   uint32_t ignore = (RTC->DR); //need to read date to keep system synced.
+            ^~~~~~
+../src/RTC.c:118:11: warning: unused variable 'secs' [-Wunused-variable]
+   uint8_t secs = (ten_sec*10)+one_sec;
+           ^~~~
+../src/RTC.c:117:11: warning: unused variable 'mins' [-Wunused-variable]
+   uint8_t mins = (ten_min<<4) | one_min;
+           ^~~~
+../src/RTC.c:116:11: warning: unused variable 'hours' [-Wunused-variable]
+   uint8_t hours = (ten_hour<<4) | one_hour;
+           ^~~~~
+../src/RTC.c: In function 'get_Hour':
+../src/RTC.c:148:11: warning: unused variable 'ignore' [-Wunused-variable]
+  uint32_t ignore = (RTC->DR);
+           ^~~~~~
+../src/RTC.c: At top level:
+../src/RTC.c:19:16: warning: 'RTC_ByteToBcd2' declared 'static' but never defined [-Wunused-function]
+ static uint8_t RTC_ByteToBcd2(uint8_t Value);
+                ^~~~~~~~~~~~~~
+../src/RTC.c:172:13: warning: 'enable_RTC_write_protect' defined but not used [-Wunused-function]
+ static void enable_RTC_write_protect(){
+             ^~~~~~~~~~~~~~~~~~~~~~~~
+Finished building: ../startup/sysmem.c
+Invoking: MCU GCC Compiler
+ 
+C:\Users\larsonma\Documents\CE 4951\Project\Network Card\Debug
+Building file: ../src/keypad.c
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"C:/Users/larsonma/Documents/CE 4951/Project/Network Card/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/gpio.d" -MT"src/gpio.o" -o "src/gpio.o" "../src/gpio.c"
+Finished building: ../src/ADC.c
+Finished building: ../src/RTC.c
+Invoking: MCU GCC Compiler
+ 
+ 
+C:\Users\larsonma\Documents\CE 4951\Project\Network Card\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"C:/Users/larsonma/Documents/CE 4951/Project/Network Card/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/keypad.d" -MT"src/keypad.o" -o "src/keypad.o" "../src/keypad.c"
+Building file: ../src/lcd.c
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+C:\Users\larsonma\Documents\CE 4951\Project\Network Card\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"C:/Users/larsonma/Documents/CE 4951/Project/Network Card/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/lcd.d" -MT"src/lcd.o" -o "src/lcd.o" "../src/lcd.c"
+C:\Users\larsonma\Documents\CE 4951\Project\Network Card\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"C:/Users/larsonma/Documents/CE 4951/Project/Network Card/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/keypad.c:28:16: warning: 'row_code' defined but not used [-Wunused-variable]
+ static uint8_t row_code;
+                ^~~~~~~~
+../src/keypad.c:27:16: warning: 'col_code' defined but not used [-Wunused-variable]
+ static uint8_t col_code;
+                ^~~~~~~~
+Finished building: ../src/gpio.c
+ 
+Building file: ../src/piezo.c
+Finished building: ../src/keypad.c
+../src/main.c: In function 'conv_time':
+../src/main.c:243:56: warning: operation on 'time_in' may be undefined [-Wsequence-point]
+  uint8_t hours = ((uint8_t)((*time_in)-TOINT)<<4) | (*(++time_in)-TOINT);
+                                                       ~^~~~~~~~~~
+../src/main.c:244:68: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+  uint8_t mins = ((uint8_t)(*(++time_in)-TOINT)<<4) | (*(++time_in))-TOINT;
+                                                                    ^
+../src/main.c:244:57: warning: operation on 'time_in' may be undefined [-Wsequence-point]
+  uint8_t mins = ((uint8_t)(*(++time_in)-TOINT)<<4) | (*(++time_in))-TOINT;
+                                                        ~^~~~~~~~~~
+../src/main.c:245:67: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+  uint8_t sec = ((uint8_t)(*(++time_in)-TOINT)<<4) | (*(++time_in))-TOINT;
+                                                                   ^
+../src/main.c:245:56: warning: operation on 'time_in' may be undefined [-Wsequence-point]
+  uint8_t sec = ((uint8_t)(*(++time_in)-TOINT)<<4) | (*(++time_in))-TOINT;
+                                                       ~^~~~~~~~~~
+../src/main.c: In function 'conv_date':
+../src/main.c:264:47: warning: operation on 'date_in' may be undefined [-Wsequence-point]
+  uint8_t month = (((*date_in)-TOINT)<<4) | (*(++date_in)-TOINT);
+                                              ~^~~~~~~~~~
+../src/main.c:265:58: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+  uint8_t day = (*((++date_in)-TOINT)<<4) | (*(++date_in))-TOINT;
+                                                          ^
+../src/main.c:265:47: warning: operation on 'date_in' may be undefined [-Wsequence-point]
+  uint8_t day = (*((++date_in)-TOINT)<<4) | (*(++date_in))-TOINT;
+                                              ~^~~~~~~~~~
+../src/main.c:266:59: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+  uint8_t year = (*((++date_in)-TOINT)<<4) | (*(++date_in))-TOINT;
+                                                           ^
+../src/main.c:266:48: warning: operation on 'date_in' may be undefined [-Wsequence-point]
+  uint8_t year = (*((++date_in)-TOINT)<<4) | (*(++date_in))-TOINT;
+                                               ~^~~~~~~~~~
+In file included from ../src/main.c:15:0:
+At top level:
+C:/Users/larsonma/Documents/CE 4951/Project/Network Card/inc/lcd.h:18:24: warning: 'GPIOC' defined but not used [-Wunused-variable]
+ static volatile GPIOx *GPIOC = (GPIOx *) 0x40020800;
+                        ^~~~~
+C:/Users/larsonma/Documents/CE 4951/Project/Network Card/inc/lcd.h:17:24: warning: 'GPIOB' defined but not used [-Wunused-variable]
+ static volatile GPIOx *GPIOB = (GPIOx *) 0x40020400;
+                        ^~~~~
+Invoking: MCU GCC Compiler
+ 
+Finished building: ../src/lcd.c
+C:\Users\larsonma\Documents\CE 4951\Project\Network Card\Debug
+ 
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"C:/Users/larsonma/Documents/CE 4951/Project/Network Card/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/piezo.d" -MT"src/piezo.o" -o "src/piezo.o" "../src/piezo.c"
+Building file: ../src/ringbuffer.c
+Building file: ../src/syscalls.c
+Finished building: ../src/main.c
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+ 
+C:\Users\larsonma\Documents\CE 4951\Project\Network Card\Debug
+C:\Users\larsonma\Documents\CE 4951\Project\Network Card\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"C:/Users/larsonma/Documents/CE 4951/Project/Network Card/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/ringbuffer.d" -MT"src/ringbuffer.o" -o "src/ringbuffer.o" "../src/ringbuffer.c"
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"C:/Users/larsonma/Documents/CE 4951/Project/Network Card/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/syscalls.d" -MT"src/syscalls.o" -o "src/syscalls.o" "../src/syscalls.c"
+Building file: ../src/timer.c
+Invoking: MCU GCC Compiler
+C:\Users\larsonma\Documents\CE 4951\Project\Network Card\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"C:/Users/larsonma/Documents/CE 4951/Project/Network Card/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+Finished building: ../src/piezo.c
+ 
+Building file: ../src/uart_driver.c
+Invoking: MCU GCC Compiler
+Finished building: ../src/ringbuffer.c
+C:\Users\larsonma\Documents\CE 4951\Project\Network Card\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"C:/Users/larsonma/Documents/CE 4951/Project/Network Card/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/uart_driver.d" -MT"src/uart_driver.o" -o "src/uart_driver.o" "../src/uart_driver.c"
+ 
+Finished building: ../src/syscalls.c
+ 
+Finished building: ../src/timer.c
+ 
+Finished building: ../src/uart_driver.c
+ 
+Building target: Network Card.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\larsonma\Documents\CE 4951\Project\Network Card\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Network Card.elf" @"objects.list"   -lm
+Finished building target: Network Card.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Network Card.elf" "Network Card.bin"
+arm-none-eabi-size "Network Card.elf"
+   text	   data	    bss	    dec	    hex	filename
+  35848	   2580	   1400	  39828	   9b94	Network Card.elf
+ 
+18:57:55 **** Clean-only build of configuration Debug for project Network Card ****
+make -j4 clean 
+rm -rf *
+ 
+18:58:03 **** Build of configuration Debug for project Network Card ****
+make -j4 all 
+Building file: ../startup/startup_stm32.s
+Building file: ../startup/sysmem.c
+Building file: ../src/ADC.c
+Invoking: MCU GCC Assembler
+Invoking: MCU GCC Compiler
+Invoking: MCU GCC Compiler
+C:\Users\larsonma\Documents\CE 4951\Project\Network Card\Debug
+C:\Users\larsonma\Documents\CE 4951\Project\Network Card\Debug
+arm-none-eabi-as -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -g -o "startup/startup_stm32.o" "../startup/startup_stm32.s"
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"C:/Users/larsonma/Documents/CE 4951/Project/Network Card/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"startup/sysmem.d" -MT"startup/sysmem.o" -o "startup/sysmem.o" "../startup/sysmem.c"
+C:\Users\larsonma\Documents\CE 4951\Project\Network Card\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"C:/Users/larsonma/Documents/CE 4951/Project/Network Card/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/ADC.d" -MT"src/ADC.o" -o "src/ADC.o" "../src/ADC.c"
+Building file: ../src/RTC.c
+Invoking: MCU GCC Compiler
+Finished building: ../startup/startup_stm32.s
+C:\Users\larsonma\Documents\CE 4951\Project\Network Card\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"C:/Users/larsonma/Documents/CE 4951/Project/Network Card/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/RTC.d" -MT"src/RTC.o" -o "src/RTC.o" "../src/RTC.c"
+ 
+Building file: ../src/gpio.c
+Invoking: MCU GCC Compiler
+Finished building: ../src/ADC.c
+Finished building: ../startup/sysmem.c
+../src/RTC.c: In function 'time_to_string':
+C:\Users\larsonma\Documents\CE 4951\Project\Network Card\Debug
+../src/RTC.c:128:12: warning: unused variable 'ignore' [-Wunused-variable]
+   uint32_t ignore = (RTC->DR); //need to read date to keep system synced.
+            ^~~~~~
+../src/RTC.c:118:11: warning: unused variable 'secs' [-Wunused-variable]
+   uint8_t secs = (ten_sec*10)+one_sec;
+           ^~~~
+../src/RTC.c:117:11: warning: unused variable 'mins' [-Wunused-variable]
+   uint8_t mins = (ten_min<<4) | one_min;
+           ^~~~
+../src/RTC.c:116:11: warning: unused variable 'hours' [-Wunused-variable]
+   uint8_t hours = (ten_hour<<4) | one_hour;
+           ^~~~~
+../src/RTC.c: In function 'get_Hour':
+../src/RTC.c:148:11: warning: unused variable 'ignore' [-Wunused-variable]
+  uint32_t ignore = (RTC->DR);
+           ^~~~~~
+../src/RTC.c: At top level:
+../src/RTC.c:19:16: warning: 'RTC_ByteToBcd2' declared 'static' but never defined [-Wunused-function]
+ static uint8_t RTC_ByteToBcd2(uint8_t Value);
+                ^~~~~~~~~~~~~~
+../src/RTC.c:172:13: warning: 'enable_RTC_write_protect' defined but not used [-Wunused-function]
+ static void enable_RTC_write_protect(){
+             ^~~~~~~~~~~~~~~~~~~~~~~~
+ 
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"C:/Users/larsonma/Documents/CE 4951/Project/Network Card/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/gpio.d" -MT"src/gpio.o" -o "src/gpio.o" "../src/gpio.c"
+ 
+Building file: ../src/keypad.c
+Building file: ../src/lcd.c
+Invoking: MCU GCC Compiler
+Finished building: ../src/RTC.c
+Invoking: MCU GCC Compiler
+C:\Users\larsonma\Documents\CE 4951\Project\Network Card\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"C:/Users/larsonma/Documents/CE 4951/Project/Network Card/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/keypad.d" -MT"src/keypad.o" -o "src/keypad.o" "../src/keypad.c"
+ 
+C:\Users\larsonma\Documents\CE 4951\Project\Network Card\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"C:/Users/larsonma/Documents/CE 4951/Project/Network Card/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/lcd.d" -MT"src/lcd.o" -o "src/lcd.o" "../src/lcd.c"
+Building file: ../src/main.c
+Invoking: MCU GCC Compiler
+C:\Users\larsonma\Documents\CE 4951\Project\Network Card\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"C:/Users/larsonma/Documents/CE 4951/Project/Network Card/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+Finished building: ../src/gpio.c
+../src/keypad.c:28:16: warning: 'row_code' defined but not used [-Wunused-variable]
+ static uint8_t row_code;
+                ^~~~~~~~
+../src/keypad.c:27:16: warning: 'col_code' defined but not used [-Wunused-variable]
+ static uint8_t col_code;
+                ^~~~~~~~
+ 
+Building file: ../src/piezo.c
+Invoking: MCU GCC Compiler
+C:\Users\larsonma\Documents\CE 4951\Project\Network Card\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"C:/Users/larsonma/Documents/CE 4951/Project/Network Card/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/piezo.d" -MT"src/piezo.o" -o "src/piezo.o" "../src/piezo.c"
+../src/main.c: In function 'conv_time':
+../src/main.c:243:56: warning: operation on 'time_in' may be undefined [-Wsequence-point]
+  uint8_t hours = ((uint8_t)((*time_in)-TOINT)<<4) | (*(++time_in)-TOINT);
+                                                       ~^~~~~~~~~~
+../src/main.c:244:68: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+  uint8_t mins = ((uint8_t)(*(++time_in)-TOINT)<<4) | (*(++time_in))-TOINT;
+                                                                    ^
+../src/main.c:244:57: warning: operation on 'time_in' may be undefined [-Wsequence-point]
+  uint8_t mins = ((uint8_t)(*(++time_in)-TOINT)<<4) | (*(++time_in))-TOINT;
+                                                        ~^~~~~~~~~~
+../src/main.c:245:67: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+  uint8_t sec = ((uint8_t)(*(++time_in)-TOINT)<<4) | (*(++time_in))-TOINT;
+                                                                   ^
+../src/main.c:245:56: warning: operation on 'time_in' may be undefined [-Wsequence-point]
+  uint8_t sec = ((uint8_t)(*(++time_in)-TOINT)<<4) | (*(++time_in))-TOINT;
+                                                       ~^~~~~~~~~~
+../src/main.c: In function 'conv_date':
+../src/main.c:264:47: warning: operation on 'date_in' may be undefined [-Wsequence-point]
+  uint8_t month = (((*date_in)-TOINT)<<4) | (*(++date_in)-TOINT);
+                                              ~^~~~~~~~~~
+../src/main.c:265:58: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+  uint8_t day = (*((++date_in)-TOINT)<<4) | (*(++date_in))-TOINT;
+                                                          ^
+../src/main.c:265:47: warning: operation on 'date_in' may be undefined [-Wsequence-point]
+  uint8_t day = (*((++date_in)-TOINT)<<4) | (*(++date_in))-TOINT;
+                                              ~^~~~~~~~~~
+../src/main.c:266:59: warning: suggest parentheses around arithmetic in operand of '|' [-Wparentheses]
+  uint8_t year = (*((++date_in)-TOINT)<<4) | (*(++date_in))-TOINT;
+                                                           ^
+../src/main.c:266:48: warning: operation on 'date_in' may be undefined [-Wsequence-point]
+  uint8_t year = (*((++date_in)-TOINT)<<4) | (*(++date_in))-TOINT;
+                                               ~^~~~~~~~~~
+In file included from ../src/main.c:15:0:
+At top level:
+C:/Users/larsonma/Documents/CE 4951/Project/Network Card/inc/lcd.h:18:24: warning: 'GPIOC' defined but not used [-Wunused-variable]
+ static volatile GPIOx *GPIOC = (GPIOx *) 0x40020800;
+                        ^~~~~
+C:/Users/larsonma/Documents/CE 4951/Project/Network Card/inc/lcd.h:17:24: warning: 'GPIOB' defined but not used [-Wunused-variable]
+ static volatile GPIOx *GPIOB = (GPIOx *) 0x40020400;
+                        ^~~~~
+Finished building: ../src/keypad.c
+Finished building: ../src/lcd.c
+ 
+ 
+Building file: ../src/ringbuffer.c
+Finished building: ../src/main.c
+Invoking: MCU GCC Compiler
+Building file: ../src/syscalls.c
+ 
+C:\Users\larsonma\Documents\CE 4951\Project\Network Card\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"C:/Users/larsonma/Documents/CE 4951/Project/Network Card/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/ringbuffer.d" -MT"src/ringbuffer.o" -o "src/ringbuffer.o" "../src/ringbuffer.c"
+Invoking: MCU GCC Compiler
+Building file: ../src/timer.c
+C:\Users\larsonma\Documents\CE 4951\Project\Network Card\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"C:/Users/larsonma/Documents/CE 4951/Project/Network Card/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/syscalls.d" -MT"src/syscalls.o" -o "src/syscalls.o" "../src/syscalls.c"
+Invoking: MCU GCC Compiler
+C:\Users\larsonma\Documents\CE 4951\Project\Network Card\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"C:/Users/larsonma/Documents/CE 4951/Project/Network Card/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/timer.d" -MT"src/timer.o" -o "src/timer.o" "../src/timer.c"
+Finished building: ../src/piezo.c
+ 
+Building file: ../src/uart_driver.c
+Invoking: MCU GCC Compiler
+Finished building: ../src/ringbuffer.c
+C:\Users\larsonma\Documents\CE 4951\Project\Network Card\Debug
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -DSTM32 -DSTM32F4 -DSTM32F446RETx -DNUCLEO_F446RE -DDEBUG -I"C:/Users/larsonma/Documents/CE 4951/Project/Network Card/inc" -O0 -g3 -Wall -fmessage-length=0 -ffunction-sections -c -MMD -MP -MF"src/uart_driver.d" -MT"src/uart_driver.o" -o "src/uart_driver.o" "../src/uart_driver.c"
+ 
+Finished building: ../src/syscalls.c
+Finished building: ../src/timer.c
+ 
+ 
+Finished building: ../src/uart_driver.c
+ 
+Building target: Network Card.elf
+Invoking: MCU GCC Linker
+arm-none-eabi-gcc -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16 -T"C:\Users\larsonma\Documents\CE 4951\Project\Network Card\LinkerScript.ld" -Wl,-Map=output.map -Wl,--gc-sections -o "Network Card.elf" @"objects.list"   -lm
+Finished building target: Network Card.elf
+ 
+make --no-print-directory post-build
+Generating binary and Printing size information:
+arm-none-eabi-objcopy -O binary "Network Card.elf" "Network Card.bin"
+arm-none-eabi-size "Network Card.elf"
+   text	   data	    bss	    dec	    hex	filename
+  35848	   2580	   1400	  39828	   9b94	Network Card.elf
+ 
+19:00:04 **** Incremental Build of configuration Debug for project Network Card ****
+make -j4 all 
+make: Nothing to be done for 'all'.
+19:00:17 **** Incremental Build of configuration Debug for project Network Card ****
+make -j4 all 
+make: Nothing to be done for 'all'.
