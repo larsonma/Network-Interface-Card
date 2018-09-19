@@ -1,0 +1,7 @@
+.metadata/
+Debug/
+*.cfg
+
+*settings/
+.cproject
+.project
